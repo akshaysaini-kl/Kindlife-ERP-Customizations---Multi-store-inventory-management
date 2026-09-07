@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-10 18:30:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "duplicates_tab",
+  "enabled_section",
+  "enabled_for_item_group",
+  "enabled_for_customer_group",
+  "enabled_for_brand",
+  "enabled_for_supplier_group",
+  "column_break_1",
+  "similarity_threshold",
+  "block_duplicates_on_import",
+  "section_break_2",
+  "warning_message_template",
+  "general_tab",
+  "description",
+  "enable_ean_validation",
+  "allow_mrp_edit",
+  "b2c_margins_tab",
+  "b2c_margins_section",
+  "monthly_cron_debit_note_generation",
+  "b2c_margins_column_break",
+  "cron_run_day"
+ ],
+ "fields": [
+  {
+   "fieldname": "enabled_section",
+   "fieldtype": "Section Break",
+   "label": "Enable Duplicate Detection"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled_for_item_group",
+   "fieldtype": "Check",
+   "label": "Enable for Item Group"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled_for_customer_group",
+   "fieldtype": "Check",
+   "label": "Enable for Customer Group"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled_for_brand",
+   "fieldtype": "Check",
+   "label": "Enable for Brand"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled_for_supplier_group",
+   "fieldtype": "Check",
+   "label": "Enable for Supplier Group"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "80",
+   "description": "Minimum similarity percentage (0-100) to trigger duplicate warning",
+   "fieldname": "similarity_threshold",
+   "fieldtype": "Int",
+   "label": "Similarity Threshold (%)"
+  },
+  {
+   "default": "0",
+   "description": "If enabled, data imports will be blocked when duplicates are detected",
+   "fieldname": "block_duplicates_on_import",
+   "fieldtype": "Check",
+   "label": "Block Duplicates on Import"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Custom Warning Message"
+  },
+  {
+   "description": "Optional custom template for duplicate warning messages. Leave blank to use default format.",
+   "fieldname": "warning_message_template",
+   "fieldtype": "Text Editor",
+   "label": "Warning Message Template"
+  },
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "duplicates_tab",
+   "fieldtype": "Tab Break",
+   "label": "Duplicates"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "b2c_margins_tab",
+   "fieldtype": "Tab Break",
+   "label": "B2C Margins"
+  },
+  {
+   "fieldname": "b2c_margins_section",
+   "fieldtype": "Section Break",
+   "label": "Debit Note Configuration"
+  },
+  {
+   "default": "0",
+   "description": "Enables the end-of-month cron job that consolidates and posts debit notes per supplier.",
+   "fieldname": "monthly_cron_debit_note_generation",
+   "fieldtype": "Check",
+   "label": "Monthly Cron \u2014 Debit Note Generation"
+  },
+  {
+   "fieldname": "b2c_margins_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "28",
+   "description": "Day of month on which the debit note cron job fires.",
+   "fieldname": "cron_run_day",
+   "fieldtype": "Int",
+   "label": "Cron Run Day"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_ean_validation",
+   "fieldtype": "Check",
+   "label": "Enable EAN Validation"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_mrp_edit",
+   "fieldtype": "Check",
+   "label": "Allow MRP Edit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-31 22:10:38.158357",
+ "modified_by": "Administrator",
+ "module": "Kindlife App",
+ "name": "Kindlife Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

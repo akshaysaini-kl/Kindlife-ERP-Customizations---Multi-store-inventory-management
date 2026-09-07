@@ -1,0 +1,23 @@
+{
+ "background_color": "#ede4e4",
+ "color": "#0757a3",
+ "creation": "2020-07-20 21:01:02.438012",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Purchase Order",
+ "dynamic_filters_json": "[[\"Purchase Order\",\"company\",\"=\",\"frappe.defaults.get_user_default(\\\"Company\\\")\"]]",
+ "filters_json": "[[\"Purchase Order\",\"status\",\"in\",[\"To Receive and Bill\",\"To Receive\",null],false],[\"Purchase Order\",\"docstatus\",\"=\",1,false]]",
+ "function": "Count",
+ "idx": 3,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Purchase Orders to Receive",
+ "modified": "2025-11-14 16:12:47.783820",
+ "modified_by": "Administrator",
+ "module": "Kindlife App",
+ "name": "Purchase Orders to Receive",
+ "owner": "Administrator",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Weekly",
+ "type": "Document Type"
+}

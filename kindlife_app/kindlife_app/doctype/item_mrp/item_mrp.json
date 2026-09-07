@@ -1,0 +1,166 @@
+{
+    "actions": [],
+    "allow_rename": 0,
+    "autoname": "format:MRP-{#####}",
+    "creation": "2026-03-25 17:49:49.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "item_code",
+        "item_name",
+        "column_break_1",
+        "status",
+        "amended_from",
+        "section_break_mrp",
+        "old_mrp",
+        "column_break_2",
+        "new_mrp",
+        "section_break_date",
+        "effective_from"
+    ],
+    "fields": [
+        {
+            "fieldname": "item_code",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Item Code",
+            "options": "Item",
+            "reqd": 1,
+            "search_index": 1
+        },
+        {
+            "fetch_from": "item_code.item_name",
+            "fetch_if_empty": 1,
+            "fieldname": "item_name",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Item Name",
+            "read_only": 1
+        },
+        {
+            "fieldname": "column_break_1",
+            "fieldtype": "Column Break"
+        },
+        {
+            "default": "Pending",
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Status",
+            "options": "Pending\nApplied",
+            "read_only": 1
+        },
+        {
+            "fieldname": "amended_from",
+            "fieldtype": "Link",
+            "label": "Amended From",
+            "no_copy": 1,
+            "options": "Item MRP",
+            "print_hide": 1,
+            "read_only": 1,
+            "search_index": 1
+        },
+        {
+            "fieldname": "section_break_mrp",
+            "fieldtype": "Section Break",
+            "label": "MRP Details"
+        },
+        {
+            "fieldname": "old_mrp",
+            "fieldtype": "Currency",
+            "in_list_view": 1,
+            "label": "Old MRP",
+            "options": "INR",
+            "read_only": 1
+        },
+        {
+            "fieldname": "column_break_2",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "new_mrp",
+            "fieldtype": "Currency",
+            "in_list_view": 1,
+            "label": "New MRP",
+            "non_negative": 1,
+            "options": "INR",
+            "reqd": 1
+        },
+        {
+            "fieldname": "section_break_date",
+            "fieldtype": "Section Break"
+        },
+        {
+            "default": "Today",
+            "fieldname": "effective_from",
+            "fieldtype": "Date",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Effective From",
+            "reqd": 1
+        }
+    ],
+    "grid_page_length": 50,
+    "index_web_pages_for_search": 1,
+    "is_submittable": 1,
+    "links": [],
+    "modified": "2026-03-25 17:49:49.000000",
+    "modified_by": "Administrator",
+    "module": "Kindlife App",
+    "name": "Item MRP",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "submit": 1,
+            "write": 1
+        },
+        {
+            "create": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "Accounts Manager",
+            "share": 1,
+            "submit": 1,
+            "write": 1
+        },
+        {
+            "create": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "Purchase Manager",
+            "share": 1,
+            "submit": 1,
+            "write": 1
+        },
+        {
+            "read": 1,
+            "report": 1,
+            "role": "Stock User",
+            "export": 1
+        }
+    ],
+    "row_format": "Dynamic",
+    "sort_field": "effective_from",
+    "sort_order": "DESC",
+    "states": [],
+    "title_field": "item_code",
+    "track_changes": 1
+}

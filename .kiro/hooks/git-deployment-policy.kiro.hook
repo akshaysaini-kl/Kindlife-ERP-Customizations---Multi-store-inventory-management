@@ -1,0 +1,13 @@
+{
+  "name": "Git Deployment Policy",
+  "version": "1.0.0",
+  "description": "Ensures safe Git operations - only push to current working branch, never to main/develop/production. Only push when explicitly asked by user.",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": ["shell"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "CRITICAL GIT DEPLOYMENT CHECK:\n\nBefore executing any git command, verify:\n\n1. NEVER push directly to protected branches:\n   - FORBIDDEN: git push origin main\n   - FORBIDDEN: git push origin master\n   - FORBIDDEN: git push origin develop\n   - FORBIDDEN: git push origin production\n   - ALLOWED: git push origin current-branch-name\n\n2. Only push when EXPLICITLY asked:\n   - User must say: push to git, push changes, commit and push\n   - DO NOT push automatically after making changes\n   - ONLY push when user explicitly requests it\n\n3. Always push to the SAME branch you are working on:\n   - First check current branch: git branch --show-current\n   - Push to that branch: git push origin current-branch\n   - NEVER switch branches before pushing\n\n4. Workflow:\n   - User makes changes on feature branch\n   - User asks to push\n   - You push to the SAME feature branch\n   - User creates Pull Request to merge into develop/main\n\n5. If command contains git push:\n   - Extract the branch name from the command\n   - Check if it is main/master/develop/production\n   - If YES: STOP and inform user this is forbidden\n   - If NO: Proceed with push to feature branch\n\n6. User did NOT explicitly ask to push:\n   - DO NOT execute git push commands\n   - Inform user: I can push these changes when you are ready\n\nProceed ONLY if:\n- NOT pushing to protected branches\n- User EXPLICITLY asked to push\n- Pushing to current working branch"
+  }
+}

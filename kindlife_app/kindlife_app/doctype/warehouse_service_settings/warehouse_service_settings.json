@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-07 17:25:22.180787",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fallback_warehouse",
+  "warehouse_assignment_rule"
+ ],
+ "fields": [
+  {
+   "fieldname": "fallback_warehouse",
+   "fieldtype": "Link",
+   "label": "Fallback Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "warehouse_assignment_rule",
+   "fieldtype": "Select",
+   "label": "Warehouse Assignment Rule",
+   "options": "ClosestFulfillAllRule\nOptmisedShipmentRule"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-10-07 17:30:03.861400",
+ "modified_by": "Administrator",
+ "module": "Kindlife App",
+ "name": "Warehouse Service Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

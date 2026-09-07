@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Frappe-First Development Policy",
+  "description": "Enforces using Frappe built-in utilities and functionalities. Before suggesting any external packages, libraries, or non-Frappe solutions, I must inform the user and get approval.",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "CRITICAL CHECK - Frappe-First Policy:\n\nBefore writing any code, verify:\n\n1. **Are you using Frappe built-in utilities?**\n   - frappe.cache() for Redis/caching\n   - frappe.call() for API calls\n   - frappe.db for database queries\n   - frappe.get_doc() for document operations\n   - @frappe.whitelist() for API endpoints\n   - frappe.msgprint(), frappe.show_alert() for UI\n   - frappe.session for user/session data\n   - frappe.utils for common utilities\n\n2. **Are you suggesting external packages?**\n   - pip install [package]\n   - npm install [package]\n   - Any third-party library imports\n   \n   ⚠️ IF YES: STOP and inform the user first!\n   \n3. **Required Actions:**\n   - ✅ First: Search Frappe documentation/built-ins\n   - ✅ Second: Check if Frappe has equivalent functionality\n   - ✅ Third: Use Frappe's approach (even if different from standard)\n   - ⚠️ Last Resort: Ask user before suggesting external solutions\n\n4. **Examples of Frappe-First Approach:**\n   - ❌ DON'T: import redis; r = redis.Redis()\n   - ✅ DO: frappe.cache().set_value()\n   \n   - ❌ DON'T: import requests; requests.get()\n   - ✅ DO: frappe.call() or frappe.get_request()\n   \n   - ❌ DON'T: import celery\n   - ✅ DO: frappe.enqueue() for background jobs\n   \n   - ❌ DON'T: import socketio\n   - ✅ DO: frappe.publish_realtime()\n\n5. **If Frappe doesn't have it:**\n   - Inform user: \"Frappe doesn't have built-in [X]. Options: [A, B, C]. Which do you prefer?\"\n   - Wait for user approval before proceeding\n   - Document why external solution is needed\n\nProceed with code writing only if using Frappe built-ins OR user has approved external solution."
+  }
+}

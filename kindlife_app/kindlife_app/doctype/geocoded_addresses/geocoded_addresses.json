@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2025-10-14 15:26:21.335992",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "address_line1",
+  "address_line2",
+  "city",
+  "state",
+  "pincode",
+  "country",
+  "address_hash",
+  "latitude",
+  "longitude"
+ ],
+ "fields": [
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Text",
+   "label": "address_line1"
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Text",
+   "label": "address_line2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "city"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "state"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "pincode"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "country"
+  },
+  {
+   "fieldname": "address_hash",
+   "fieldtype": "Text",
+   "label": "address_hash"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "longitude"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-29 17:03:33.833665",
+ "modified_by": "Administrator",
+ "module": "Kindlife App",
+ "name": "geocoded_addresses",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,326 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"kb3XPLg8lb\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Stock Inward</b></span>\",\"col\":12}},{\"id\":\"3E0-P1ATXf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Purchase Orders to Receive\",\"col\":4}},{\"id\":\"sumQYOsQy0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Items\",\"col\":4}},{\"id\":\"qPnu0nM79e\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"SydkiXZn1q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"id\":\"f7ts1WyQLl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}},{\"id\":\"dShs9tYODg\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"lTfZhpoPul\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Stock Outward</b></span>\",\"col\":12}},{\"id\":\"7ISs4L-SNw\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Sales Orders to Deliver\",\"col\":4}},{\"id\":\"M6gEjHXgyQ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"VMbcAuZAJm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":3}},{\"id\":\"ysW-EV_t8G\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pick List\",\"col\":3}},{\"id\":\"P0G7XndwP3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Note\",\"col\":3}},{\"id\":\"6DHOPuhsA7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Consolidated Pick List\",\"col\":3}},{\"id\":\"3_6kJ-CFeB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports</b></span>\",\"col\":12}},{\"id\":\"i7KMlYraPL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PO Tracking\",\"col\":3}},{\"id\":\"Bi63Zfyzk1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Shortage Report\",\"col\":3}},{\"id\":\"dzl0Vg5kxg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Batch Wise Balance History\",\"col\":3}},{\"id\":\"9R4YXMPZql\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Batch Item Expiry Status\",\"col\":3}},{\"id\":\"YbTsttjHuR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ledger\",\"col\":3}},{\"id\":\"VLoMXAQHq9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Balance\",\"col\":3}},{\"id\":\"VXBsEMbeCk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"So Tracking\",\"col\":3}}]",
+ "creation": "2025-11-13 18:42:08.688793",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "retail",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Warehouse Home",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chart of Accounts",
+   "link_count": 0,
+   "link_to": "Account",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company",
+   "link_count": 0,
+   "link_to": "Company",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Warehouse",
+   "link_count": 0,
+   "link_to": "Warehouse",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Brand",
+   "link_count": 0,
+   "link_to": "Brand",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Unit of Measure (UOM)",
+   "link_count": 0,
+   "link_to": "UOM",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Reconciliation",
+   "link_count": 0,
+   "link_to": "Stock Reconciliation",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lead",
+   "link_count": 0,
+   "link_to": "Lead",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Group",
+   "link_count": 0,
+   "link_to": "Customer Group",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Territory",
+   "link_count": 0,
+   "link_to": "Territory",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Import Data",
+   "link_count": 0,
+   "link_to": "Data Import",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Opening Invoice Creation Tool",
+   "link_count": 0,
+   "link_to": "Opening Invoice Creation Tool",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chart of Accounts Importer",
+   "link_count": 0,
+   "link_to": "Chart of Accounts Importer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Letter Head",
+   "link_count": 0,
+   "link_to": "Letter Head",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Email Account",
+   "link_count": 0,
+   "link_to": "Email Account",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-11-14 15:39:04.768973",
+ "modified_by": "Administrator",
+ "module": "Kindlife App",
+ "name": "Warehouse Home",
+ "number_cards": [
+  {
+   "label": "Purchase Orders to Receive",
+   "number_card_name": "Purchase Orders to Receive"
+  },
+  {
+   "label": "Sales Orders to Deliver",
+   "number_card_name": "Sales Orders to Deliver"
+  },
+  {
+   "label": "Total Active Items",
+   "number_card_name": "Total Active Items"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [
+  {
+   "role": "Warehouse User"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 1.1,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Consolidated Pick List",
+   "link_to": "Consolidated Pick List",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Entry",
+   "link_to": "Stock Entry",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item Shortage Report",
+   "link_to": "Item Shortage Report",
+   "report_ref_doctype": "Bin",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Ledger",
+   "link_to": "Stock Ledger",
+   "report_ref_doctype": "Stock Ledger Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "PO Tracking",
+   "link_to": "PO Tracking",
+   "report_ref_doctype": "Purchase Order",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Balance",
+   "link_to": "Stock Balance",
+   "report_ref_doctype": "Stock Ledger Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Report Builder",
+   "label": "Sales Order",
+   "link_to": "Sales Order",
+   "stats_filter": "[[\"Sales Order\",\"workflow_state\",\"=\",\"Approved\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Pick List",
+   "link_to": "Pick List",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Report Builder",
+   "label": "Purchase Receipt",
+   "link_to": "Purchase Receipt",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Batch Wise Balance History",
+   "link_to": "Batch-Wise Balance History",
+   "report_ref_doctype": "Stock Ledger Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "So Tracking",
+   "link_to": "SO Tracking",
+   "report_ref_doctype": "Sales Order",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Delivery Note",
+   "link_to": "Delivery Note",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Batch Item Expiry Status",
+   "link_to": "Batch Item Expiry Status",
+   "report_ref_doctype": "Stock Ledger Entry",
+   "type": "Report"
+  }
+ ],
+ "title": "Warehouse Home"
+}

@@ -1,0 +1,176 @@
+/* To set the full width of container */
+div.container,
+#page-login main.container {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* To collapse the sidebar in Desk view by default  */
+@media screen and (min-width: 1200px) {
+  .layout-side-section {
+    display: none;
+  }
+}
+
+.price-comparison-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.price-comparison-container .table {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.price-comparison-container .table thead th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 8px;
+}
+
+.price-comparison-container .table tbody td {
+  padding: 10px 8px;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
+
+.price-comparison-container .table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.price-comparison-container .text-danger {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+.price-comparison-container .text-success {
+  color: #28a745 !important;
+  font-weight: 600;
+}
+
+.price-comparison-container .alert-info {
+  background-color: #e7f3ff;
+  border-color: #b8daff;
+  color: #004085;
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+
+.price-comparison-container .table-responsive::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.price-comparison-container .table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.price-comparison-container .table-responsive::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.price-comparison-container .table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Custom checkbox styling */
+.price-comparison-container .checkbox label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.price-comparison-container .checkbox input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+/* Keep BARCODES button visible even when row is in edit mode */
+.grid-static-col[data-fieldname="custom_generate_barcodes"] .static-area {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.grid-static-col[data-fieldname="custom_generate_barcodes"] .field-area {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .price-comparison-container .table {
+    font-size: 11px;
+  }
+
+  .price-comparison-container .table thead th,
+  .price-comparison-container .table tbody td {
+    padding: 8px 6px;
+  }
+}
+
+/* ---- B2B / B2C Channel Badge in Navbar ---- */
+.kl-channel-badge-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.kl-channel-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1.6;
+}
+
+.kl-badge-b2b {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #93c5fd;
+}
+
+.kl-badge-b2c {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.kl-badge-both {
+  background-color: #ede9fe;
+  color: #6d28d9;
+  border: 1px solid #c4b5fd;
+}
+
+/* Clickable badge (Both-access users) */
+.kl-badge-clickable {
+  cursor: pointer;
+  user-select: none;
+  transition: filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kl-badge-clickable:hover {
+  filter: brightness(0.92);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.kl-badge-clickable:active {
+  filter: brightness(0.85);
+}
+
+.kl-badge-arrow {
+  font-size: 9px;
+  margin-left: 3px;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+

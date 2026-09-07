@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 10:23:10.007541",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "api_token",
+  "enable_inventory_sync",
+  "enable_item_syncing",
+  "last_inventory_sync",
+  "auto_submition_for_b2c_documents_section",
+  "auto_submit_po",
+  "auto_submit_so"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_token",
+   "fieldtype": "Password",
+   "label": "API Token"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_inventory_sync",
+   "fieldtype": "Check",
+   "label": "Enable Inventory Sync"
+  },
+  {
+   "fieldname": "last_inventory_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Inventory Sync"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_submit_po",
+   "fieldtype": "Check",
+   "label": "Auto Submit PO"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_submit_so",
+   "fieldtype": "Check",
+   "label": "Auto Submit SO"
+  },
+  {
+   "fieldname": "auto_submition_for_b2c_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Auto Submission For B2C Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_item_syncing",
+   "fieldtype": "Check",
+   "label": "Enable Item Syncing"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-13 15:33:46.775059",
+ "modified_by": "Administrator",
+ "module": "Kindlife App",
+ "name": "CS Cart Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
